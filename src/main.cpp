@@ -1,15 +1,17 @@
 /*======================================================================
- * Date.cpp
+ * main.cpp
  * Author : Guillaume LEGRU
  * Date : 03/04/2015
  *
- * A time format for my schedule project.
+ * main file, use for now
  *======================================================================*/
 
 #include "Date.hpp"
 
-Date::Date() : day_(), month_(), year_(), hour_(), minutes_()
-{}
+int main(int argc, char ** argv)
+{
 
-Date::Date(int day, int month, int year, int hour, int minutes)
-{}
+	Date d1(1,1,1,1,1);;
+	Date d2();
+	return 0;
+}

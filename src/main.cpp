@@ -11,7 +11,7 @@
 int main(int argc, char ** argv)
 {
 
-	Date d1(1,1,1,1,1);;
-	Date d2();
+	Date d1(1,1,1,1,1);
+	Date d2;
 	return 0;
 }

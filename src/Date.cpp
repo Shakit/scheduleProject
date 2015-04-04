@@ -8,7 +8,7 @@
 
 #include "Date.hpp"
 
-Date::Date() : day_(), month_(), year_(), hour_(), minutes_()
+Date::Date()
 {}
 
 Date::Date(int day, int month, int year, int hour, int minutes)

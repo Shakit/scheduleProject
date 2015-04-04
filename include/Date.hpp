@@ -17,6 +17,10 @@ public :
 	Date(int day, int month, int year, int hour, int minutes);
 
 	/*getters are not needed yet */
+
+	/* other methods */
+	void display();
+	
 private :
 	int day_;
 	int month_;

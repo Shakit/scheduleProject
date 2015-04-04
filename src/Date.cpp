@@ -8,8 +8,16 @@
 
 #include <ctime>
 #include <iostream>
+#include <string>
 
 #include "Date.hpp"
+
+std::string stringOfInt(int n)
+{
+	std::string s = std::to_string(n);
+	if (n<10) return "0"+s;
+	return s;
+}
 
 Date::Date()
 {
@@ -25,3 +33,13 @@ Date::Date()
 Date::Date(int day, int month, int year, int hour, int minutes) :
 	day_(day),month_(month),year_(year), hour_(hour), minutes_(minutes)
 {}
+
+void Date::display()
+{
+	std::cout << stringOfInt(day_) << "."
+			  << stringOfInt(month_) << "."
+			  << stringOfInt(year_) << " at "
+			  << stringOfInt(hour_) << ":"
+			  << stringOfInt(minutes_)
+			  << std::endl;
+}

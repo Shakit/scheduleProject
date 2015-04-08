@@ -9,7 +9,7 @@
 #include "Date.hpp"
 #include <iostream>
 
-int main(int argc, char ** argv)
+int main(void)
 {
 
 	Date d1(1,1,1,1,1);

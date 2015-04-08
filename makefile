@@ -9,7 +9,7 @@ IDIR=include/
 
 #Compiler options
 IDIRFLAG=$(foreach idir, $(IDIR), -I$(idir))
-CXXFLAGS=-std=c++11 $(IDIRFLAGS) -g -W -Wall -Wextra -Wpedantic
+CXXFLAGS=-std=c++11 $(IDIRFLAG) -g -W -Wall -Wextra -Wpedantic
 
 
 test: src/Date.cpp src/main.cpp

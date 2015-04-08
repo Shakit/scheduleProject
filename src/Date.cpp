@@ -12,6 +12,8 @@
 
 #include "Date.hpp"
 
+/*============================================================*/
+/* STATIC FUNTION */
 std::string stringOfInt(int n)
 {
 	std::string s = std::to_string(n);
@@ -19,6 +21,10 @@ std::string stringOfInt(int n)
 	return s;
 }
 
+/*============================================================*/
+/* CONTRUCTORS */
+
+/* Empty */
 Date::Date()
 {
 	time_t t = time(0);
@@ -30,10 +36,17 @@ Date::Date()
 	minutes_=currentDate->tm_min;
 }
 
+/* Fixing drectly all paramameters */
 Date::Date(int day, int month, int year, int hour, int minutes) :
 	day_(day),month_(month),year_(year), hour_(hour), minutes_(minutes)
 {}
 
+/*============================================================*/
+/* OTHER METHODS */
+
+/*display(void): void
+  -> a human readable display of date
+ */
 void Date::display()
 {
 	std::cout << stringOfInt(day_) << "."
